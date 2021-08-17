@@ -7,14 +7,14 @@ import modules.get_db as get_db
 import datetime
 
 app = Flask(__name__)
-app.secret_key = 'vivek'
+app.secret_key = 'your secret key'
 
 mail = Mail(app)
 
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME']= 'sinha22.sonam@gmail.com'
-app.config['MAIL_PASSWORD'] = 'HaldiaInstitute'
+app.config['MAIL_USERNAME']= 'yourmail'
+app.config['MAIL_PASSWORD'] = 'your password'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
